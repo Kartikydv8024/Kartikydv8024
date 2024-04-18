@@ -1,0 +1,225 @@
+Microsoft Windows [Version 10.0.21996.1]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\karti>git clon https://github.com/Kartikydv8024/test.git
+git: 'clon' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clone
+        column
+
+C:\Users\karti>git clone https://github.com/Kartikydv8024/test.git
+Cloning into 'test'...
+warning: You appear to have cloned an empty repository.
+
+C:\Users\karti>git clone https://github.com/Kartikydv8024/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+C:\Users\karti>git clone https://github.com/Kartikydv8024/Kartikydv8024.git
+Cloning into 'Kartikydv8024'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+C:\Users\karti>git clone https://github.com/Kartikydv8024/Kartikydv8024.git
+fatal: destination path 'Kartikydv8024' already exists and is not an empty directory.
+
+C:\Users\karti>
+C:\Users\karti>
+C:\Users\karti>
+C:\Users\karti>
+C:\Users\karti>
+C:\Users\karti>cd Kartikydv8024/
+
+C:\Users\karti\Kartikydv8024>dir
+ Volume in drive C is OS
+ Volume Serial Number is E268-9FAF
+
+ Directory of C:\Users\karti\Kartikydv8024
+
+18-04-2024  20:24    <DIR>          .
+18-04-2024  20:24    <DIR>          ..
+18-04-2024  20:24               428 README.md
+               1 File(s)            428 bytes
+               2 Dir(s)  38,783,266,816 bytes free
+
+C:\Users\karti\Kartikydv8024>git pull
+Already up to date.
+
+C:\Users\karti\Kartikydv8024>dir
+ Volume in drive C is OS
+ Volume Serial Number is E268-9FAF
+
+ Directory of C:\Users\karti\Kartikydv8024
+
+18-04-2024  20:27    <DIR>          .
+18-04-2024  20:24    <DIR>          ..
+18-04-2024  20:24               428 README.md
+18-04-2024  20:27    <DIR>          testgit
+               1 File(s)            428 bytes
+               3 Dir(s)  38,786,740,224 bytes free
+
+C:\Users\karti\Kartikydv8024>git add .
+
+C:\Users\karti\Kartikydv8024>dir
+ Volume in drive C is OS
+ Volume Serial Number is E268-9FAF
+
+ Directory of C:\Users\karti\Kartikydv8024
+
+18-04-2024  20:27    <DIR>          .
+18-04-2024  20:24    <DIR>          ..
+18-04-2024  20:24               428 README.md
+18-04-2024  20:27    <DIR>          testgit
+               1 File(s)            428 bytes
+               3 Dir(s)  38,785,589,248 bytes free
+
+C:\Users\karti\Kartikydv8024>git commit -m "updated new folder and added one file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'karti@DESKTOP-JF86QJD.(none)')
+
+C:\Users\karti\Kartikydv8024>git config --global user.email "kartikydv8024@gmail.com"
+
+C:\Users\karti\Kartikydv8024>git commit -m "updated new folder and added one file"
+[main 5dddb6e] updated new folder and added one file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 testgit/testnote.txt
+
+C:\Users\karti\Kartikydv8024>git push
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 348 bytes | 174.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Kartikydv8024/Kartikydv8024.git
+   27ab8af..5dddb6e  main -> main
+
+C:\Users\karti\Kartikydv8024>dir
+ Volume in drive C is OS
+ Volume Serial Number is E268-9FAF
+
+ Directory of C:\Users\karti\Kartikydv8024
+
+18-04-2024  20:27    <DIR>          .
+18-04-2024  20:29    <DIR>          ..
+18-04-2024  20:24               428 README.md
+18-04-2024  20:27    <DIR>          testgit
+               1 File(s)            428 bytes
+               3 Dir(s)  38,782,169,088 bytes free
+
+C:\Users\karti\Kartikydv8024>
+C:\Users\karti\Kartikydv8024>
+C:\Users\karti\Kartikydv8024>
+C:\Users\karti\Kartikydv8024>git checkout -v future main
+error: unknown switch `v'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --[no-]guess          second guess 'git checkout <no-such-branch>' (default)
+    --[no-]overlay        use overlay mode (default)
+    -q, --[no-]quiet      suppress progress reporting
+    --[no-]recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --[no-]progress       force progress reporting
+    -m, --[no-]merge      perform a 3-way merge with the new branch
+    --[no-]conflict <style>
+                          conflict style (merge, diff3, or zdiff3)
+    -d, --[no-]detach     detach HEAD at named commit
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -f, --[no-]force      force checkout (throw away local modifications)
+    --[no-]orphan <new-branch>
+                          new unborn branch
+    --[no-]overwrite-ignore
+                          update ignored files (default)
+    --[no-]ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --[no-]patch      select hunks interactively
+    --[no-]ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+C:\Users\karti\Kartikydv8024>git checkout -b future main
+Switched to a new branch 'future'
+
+C:\Users\karti\Kartikydv8024>dir
+ Volume in drive C is OS
+ Volume Serial Number is E268-9FAF
+
+ Directory of C:\Users\karti\Kartikydv8024
+
+18-04-2024  20:27    <DIR>          .
+18-04-2024  20:33    <DIR>          ..
+18-04-2024  20:24               428 README.md
+18-04-2024  20:27    <DIR>          testgit
+               1 File(s)            428 bytes
+               3 Dir(s)  38,783,746,048 bytes free
+
+C:\Users\karti\Kartikydv8024>dir /w
+ Volume in drive C is OS
+ Volume Serial Number is E268-9FAF
+
+ Directory of C:\Users\karti\Kartikydv8024
+
+[.]         [..]        README.md   [testgit]
+               1 File(s)            428 bytes
+               3 Dir(s)  38,783,680,512 bytes free
+
+C:\Users\karti\Kartikydv8024>git add .
+
+C:\Users\karti\Kartikydv8024>git commit -m "Created one Branch & folder and added one file"
+[future 15059cf] Created one Branch & folder and added one file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 kartik/devops.txt
+ create mode 100644 murugayen/gitlearning1.txt
+
+C:\Users\karti\Kartikydv8024>git push
+fatal: The current branch future has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin future
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\karti\Kartikydv8024> git push --set-upstream origin future
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 475 bytes | 237.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'future' on GitHub by visiting:
+remote:      https://github.com/Kartikydv8024/Kartikydv8024/pull/new/future
+remote:
+To https://github.com/Kartikydv8024/Kartikydv8024.git
+ * [new branch]      future -> future
+branch 'future' set up to track 'origin/future'.
+
+C:\Users\karti\Kartikydv8024>
